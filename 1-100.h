@@ -67,7 +67,7 @@ void Notes(int mode)
     if (mode == 1)
     {
         cout << "Ausgabe gewählter Noten gestartet" << endl;
-        while (x <= 10; x >= 0)
+        while (x <= 10 && x >= 0)
         {
             if
             {

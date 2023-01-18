@@ -43,38 +43,52 @@ void divtilend()
 void Notes(int mode)
 {
     int i, x, y;
-    x = 5;
+    x = 0;
     i = 0;
     float c = 0;
-    cout << "Wie viele Noten gibt es" << endl;
-    int note[y]=0;
-    cin >> y;
-    while (x != 0)
+    int note[10] = 0;
+
+    while (x <= 10)
     {
         cout << "Gib nir ne Note(0 um abzubrechen)" << endl;
-        cin >> x;
-        //Arrays (Vektoren, Felder)
-        //Used to store a lot of data of the same Type
+        cin >> note[x];
+        // Arrays (Vektoren, Felder)
+        // Used to store a lot of data of the same Type
 
-       
-        i++;
+        x++;
     }
-
-    x = 1 * one;
-    x = x + 2 * two;
-    x = x + 3 * three;
-    x = x + 4 * four;
-    x = x + 5 * five;
-    x = x + 6 * six;
-    c = x / i;
+    x = 0;
+    for (i = 0; i < 9; i++)
+    {
+        x = note[i] + x;
+    }
+    y = x / 10;
+    x = 10;
     if (mode == 1)
     {
-        cout << "Der Notendurchschnitt ist " << c << endl;
+        cout << "Ausgabe gewählter Noten gestartet" << endl;
+        while (x <= 10; x >= 0)
+        {
+            if
+            {
+                x = -1
+            }
+            {
+                cout << y << "Ist der Durchschnitt";
+            }
+            else
+            {
+                cout << "Gib eine Schülernummer ein" << endl;
+                cin >> x;
+                x--;
+                cout << "Die Note des Schülers ist" << note[x] << endl;
+            }
+        }
     }
     else if (mode == 2)
     {
-        //Arrays (Vektoren, Felder)
-        //Used to store a lot of data of the same Type
+        // Arrays (Vektoren, Felder)
+        // Used to store a lot of data of the same Type
         cout << "Der Notendurchschnitt ist " << c << endl
              << "Weiteres TBW";
     }

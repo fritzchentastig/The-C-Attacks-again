@@ -3,6 +3,7 @@
 #include <iomanip>
 #include <ncurses.h>
 #include <vector>
+#include <stdlib.h>
 #include "ithinkof.cpp"
 #include "minimum1.cpp"
 #include "minimum2.h"
@@ -13,8 +14,8 @@ using namespace std;
 
 int main()
 {
-
-    char selec;
+    char firselec[5];
+    int selec;
     int run;
     run = 1;
     // Function Selection
@@ -34,61 +35,71 @@ int main()
         cout << "\n11. Notendurchschnitt berechnen und erweiterte statistische Daten anzeigen lassen";
         cout << "\n\n\n\n\nGebe deine Zahl ein oder q um das Programm zu beenden\n";
 
-        cin >> selec;
+        cin >> firselec;
         cout << endl;
 
-        if (selec == 'q')
+        if (strcmp(firselec,"q"))
             run = 0;
-
-        else if (selec == '4')
-        {
-            minimum2();
-            prsent();
-        }
-        
-        else if (selec == '5')
-        {
-            minim3();
-            prsent();
-        }
-        else if (selec == '3')
-        {
-            numberguessing();
-            prsent();
-        }
-
-        else if (selec == '6')
-        {
-            onetofivehun();
-            prsent();
-        }
-
-        else if (selec == '7')
-        {
-            twotothree();
-            prsent();
-        }
-
-        else if (selec == '8')
-        {
-            fivetoone();
-            prsent();
-        }
-
-        else if (selec == '9')
-        {
-            divtilend();
-            prsent();
-        }
-
         else
         {
-            cout << "Das ist kein gültige Auswahl";
-            prsent();
+            selec = atoi(firselec);
+            cout << selec << endl;
+            if (selec == 4)
+            {
+                minimum2();
+                prsent();
+            }
+
+            else if (selec == 5)
+            {
+                minim3();
+                prsent();
+            }
+            else if (selec == 3)
+            {
+                numberguessing();
+                prsent();
+            }
+
+            else if (selec == 6)
+            {
+                onetofivehun();
+                prsent();
+            }
+
+            else if (selec == 7)
+            {
+                twotothree();
+                prsent();
+            }
+
+            else if (selec == 8)
+            {
+                fivetoone();
+                prsent();
+            }
+
+            else if (selec == 9)
+            {
+                divtilend();
+                prsent();
+            }
+            else if (selec == 10)
+            {
+                Notes(1);
+                prsent();
+            }
+
+            else
+            {
+                cout << "Das ist kein gültige Auswahl";
+                prsent();
+            }
         }
-        selec = '0';
+        
+        selec = 0;
         cin.ignore();
-        scrclr();
+        
 
     } while (run == 1);
 

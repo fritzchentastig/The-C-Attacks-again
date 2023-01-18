@@ -46,7 +46,7 @@ void Notes(int mode)
     x = 0;
     i = 0;
     float c = 0;
-    int note[10] = 0;
+    int note[10];
 
     while (x <= 10)
     {
@@ -62,19 +62,16 @@ void Notes(int mode)
     {
         x = note[i] + x;
     }
-    y = x / 10;
+    c = (double)x / 10;
     x = 10;
     if (mode == 1)
     {
         cout << "Ausgabe gewählter Noten gestartet" << endl;
         while (x <= 10 && x >= 0)
         {
-            if
+            if (x == -1)
             {
-                x = -1
-            }
-            {
-                cout << y << "Ist der Durchschnitt";
+                cout << c << "Ist der Durchschnitt";
             }
             else
             {

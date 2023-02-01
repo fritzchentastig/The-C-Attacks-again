@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <ncurses.h>
+#include <math.h>
 
 using namespace std;
 
@@ -89,4 +90,20 @@ void Notes(int mode)
         cout << "Der Notendurchschnitt ist " << c << endl
              << "Weiteres TBW";
     }
+}
+double quadrate(double a)
+{
+    return (a * a)
+}
+
+double potenz(double a, int b)
+{
+    double end = 0;
+    b--;
+    end = a;
+    while (b >= 0)
+    {
+        end = (end * a)
+    }
+    return (end)
 }

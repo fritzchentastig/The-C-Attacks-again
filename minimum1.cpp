@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <ncurses.h>
+#include "1-100.h"
 
 using namespace std;
 
@@ -26,4 +27,9 @@ void minimum2()
     cout << x << "ist Größer";
 
 
+}
+
+void pot()
+{
+    cout << "Gib mir ne Zahl und die wie vielte Potenz ich bilden soll"
 }

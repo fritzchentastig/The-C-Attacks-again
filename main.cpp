@@ -95,7 +95,7 @@ int main()
             }
         }
         
-        selec = 0;
+        selec = 99;
         cin.ignore();
         
 

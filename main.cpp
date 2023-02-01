@@ -14,7 +14,6 @@ using namespace std;
 
 int main()
 {
-    char firselec[5];
     int selec;
     int run;
     run = 1;
@@ -33,17 +32,16 @@ int main()
         cout << "\n9. Zahlen bis zum Ende Dividieren";
         cout << "\n10. Notendurchschnitt berechnen";
         cout << "\n11. Notendurchschnitt berechnen und erweiterte statistische Daten anzeigen lassen";
-        cout << "\n\n\n\n\nGebe deine Zahl ein oder q um das Programm zu beenden\n";
+        cout << "\n\n\n\n\nGebe deine Zahl ein oder 0 um das Programm zu beenden\n";
 
-        cin >> firselec;
+        cin >> selec;
         cout << endl;
 
-        if (strcmp(firselec,"q"))
+        if (selec==0)
             run = 0;
         else
         {
-            selec = atoi(firselec);
-            cout << selec << endl;
+            
             if (selec == 4)
             {
                 minimum2();

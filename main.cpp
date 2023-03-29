@@ -8,7 +8,7 @@
 #include "minimum1.cpp"
 #include "minimum2.h"
 #include "support.h"
-#include "1-100.h"
+#include "1-100.cpp"
 
 using namespace std;
 

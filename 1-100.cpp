@@ -93,7 +93,7 @@ void Notes(int mode)
 }
 double quadrate(double a)
 {
-    return (a * a)
+    return (a * a);
 }
 
 double potenz(double a, int b)
@@ -103,7 +103,7 @@ double potenz(double a, int b)
     end = a;
     while (b >= 0)
     {
-        end = (end * a)
+        end = (end * a);
     }
-    return (end)
+    return (end);
 }

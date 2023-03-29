@@ -28,8 +28,10 @@ double standardabweichung(double InputAR[], int n)
     Durchschnitt = temp / n;
     temp = 0;
     for (run = 0; run <= n; run++)
-        temp = temp + ((InputAR[n]-Durchschnitt)*(InputAR[n]-Durchschnitt))
-        
+        {temp = temp + ((InputAR[n]-Durchschnitt)*(InputAR[n]-Durchschnitt));
+        abweich = temp / (n-1);
+        }
+    return(abweich)
 }
 
 void minimum2()

@@ -2,7 +2,6 @@
 #include <iostream>
 #include <iomanip>
 #include <ncurses.h>
-#include "1-100.h"
 
 using namespace std;
 
@@ -12,11 +11,11 @@ double minimum3(double InputAR[], int n)
     double temp;
     run = n;
     temp = InputAR[0];
-    for (n = 0; n > = run; n++)
+    for (n = 0; n >= run; n++)
         if (InputAR[n] < temp)
-            temp = InputAR[n]
+            temp = InputAR[n];
 
-                return (temp)
+                return (temp);
 }
 
 double standardabweichung(double InputAR[], int n)
@@ -31,7 +30,7 @@ double standardabweichung(double InputAR[], int n)
         {temp = temp + ((InputAR[n]-Durchschnitt)*(InputAR[n]-Durchschnitt));
         abweich = temp / (n-1);
         }
-    return(abweich)
+    return(abweich);
 }
 
 double Durchschnitt(double InputAR[], int n)
@@ -66,5 +65,5 @@ void minimum2()
 
 void pot()
 {
-    cout << "Gib mir ne Zahl und die wie vielte Potenz ich bilden soll"
+    cout << "Gib mir ne Zahl und die wie vielte Potenz ich bilden soll";
 }

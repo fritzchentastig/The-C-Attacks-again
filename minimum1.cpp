@@ -34,6 +34,16 @@ double standardabweichung(double InputAR[], int n)
     return(abweich)
 }
 
+double Durchschnitt(double InputAR[], int n)
+{
+    double Durchschnitt, temp = 0;
+    int run;
+    for (run = 0; run <= n; run++)
+        temp = temp + InputAR[run];
+    Durchschnitt = temp / n;
+    return(Durchschnitt);
+}
+
 void minimum2()
 {
     double x, y;

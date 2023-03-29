@@ -37,3 +37,8 @@ void numberguessing()
     cout << "weit weg";
 
 }
+
+double quadratsum(double a, double b)
+{
+    return((a+b)*(a+b))
+}
